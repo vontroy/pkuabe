@@ -1,4 +1,4 @@
-package pku.abe.api.lkme.web.sdk;
+package pku.abe.web;
 
 
 import org.springframework.stereotype.Component;
