@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/pkuabe-commons/linkedme-commons.iml" filepath="$PROJECT_DIR$/pkuabe-commons/linkedme-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/pkuabe-web/lkme-web.iml" filepath="$PROJECT_DIR$/pkuabe-web/lkme-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pkuabe-api/pkuabe-api.iml" filepath="$PROJECT_DIR$/pkuabe-api/pkuabe-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pkuabe-commons/pkuabe-commons.iml" filepath="$PROJECT_DIR$/pkuabe-commons/pkuabe-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pkuabe-web/pkuabe-web.iml" filepath="$PROJECT_DIR$/pkuabe-web/pkuabe-web.iml" />
     </modules>
   </component>
 </project>

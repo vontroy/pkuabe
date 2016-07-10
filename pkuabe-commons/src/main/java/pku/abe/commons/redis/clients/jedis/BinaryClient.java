@@ -1,5 +1,6 @@
 package pku.abe.commons.redis.clients.jedis;
 
+import static pku.abe.commons.redis.clients.jedis.Protocol.Command.*;
 import static pku.abe.commons.redis.clients.jedis.Protocol.toByteArray;
 import static pku.abe.commons.redis.clients.jedis.Protocol.Keyword.ENCODING;
 import static pku.abe.commons.redis.clients.jedis.Protocol.Keyword.IDLETIME;

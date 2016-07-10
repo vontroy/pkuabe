@@ -1,7 +1,8 @@
 package pku.abe.commons.counter.util;
 
-import pku.abe.commons.util.Util;
 import org.apache.commons.lang.StringUtils;
+import pku.abe.commons.util.Util;
+import pku.abe.commons.util.Utils;
 
 import java.util.HashMap;
 import java.util.Map;

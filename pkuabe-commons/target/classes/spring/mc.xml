@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:wfc="http://www.springframework.org/schema/wfc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/wfc
+       http://www.springframework.org/schema/wfc.xsd ">
+
+    <bean id="testMemCache" class="pku.abe.commons.memcache.MemCacheTemplate">
+        <property name="master">
+            <wfc:mc serverPort="192.168.1.35:11211" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="slave">
+            <wfc:mc serverPort="192.168.1.35:11211" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="masterL1List">
+            <wfc:mclist serverPorts="192.168.1.35:11211" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="slaveL1List">
+            <wfc:mclist serverPorts="192.168.1.35:11211" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="expire" value="21600"></property>	<!-- minutes -->
+    </bean>
+
+</beans>

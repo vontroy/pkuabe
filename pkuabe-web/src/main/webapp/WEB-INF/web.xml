@@ -105,16 +105,6 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>lkmeServlet</servlet-name>
-        <url-pattern>/i/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>lkmeServlet</servlet-name>
-        <url-pattern>/t/*</url-pattern>
-    </servlet-mapping>
-
 
     <servlet-mapping>
         <servlet-name>default</servlet-name>
@@ -134,16 +124,6 @@
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/favicon.ico</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>urlServlet</servlet-name>
-        <servlet-class>pku.abe.servlet.UrlServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>urlServlet</servlet-name>
-        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>

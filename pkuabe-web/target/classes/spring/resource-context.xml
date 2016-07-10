@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:wfc="http://www.springframework.org/schema/wfc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/wfc
+       http://www.springframework.org/schema/wfc.xsd ">
+
+    <!-- ${mcq.linkedme.3001.read}|${mcq.linkedme.3002.read} -->
+    <wfc:mclist id="mcq_readers" serverPorts="${linkedme.msg.mcq.read}" strategy="mcq" lazy-init="true"
+                targetListClass="java.util.LinkedList"></wfc:mclist>
+
+    <bean id="msgMcqProcessor" class="pku.abe.mcq.processor.MsgMcqProcessor" autowire="byName" lazy-init="true">
+        <property name="readThreadCountEachMcq" value="20"></property>
+        <property name="readCountOnce" value="100"></property>
+        <property name="waitTimeOnce" value="300"></property>
+        <property name="updateMc" value="true"/>
+        <property name="updateDb" value="true"/>
+        <property name="mcqReaders">
+            <map>
+                <entry key="linkedme" value-ref="mcq_readers"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="processorStart" class="pku.abe.mcq.McqProcessorStarter">
+        <property name="startProcessorNames">
+            <value>msgMcqProcessor</value>
+        </property>
+    </bean>
+
+    <bean id="console" class="pku.abe.commons.switcher.console.ConsoleServer" init-method="startup" destroy-method="shutdown">
+        <!--""-->
+        <constructor-arg>
+            <value>${lkme.sonsole.port}</value> <!-- server port -->
+        </constructor-arg>
+        <constructor-arg>
+            <value>1024</value> <!-- server read buffer size -->
+        </constructor-arg>
+    </bean>
+
+</beans>
+
+
+

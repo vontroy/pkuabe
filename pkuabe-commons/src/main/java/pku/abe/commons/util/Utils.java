@@ -3,7 +3,6 @@ package pku.abe.commons.util;
 import it.unisa.dia.gas.jpbc.Element;
 import it.unisa.dia.gas.jpbc.Pairing;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /*

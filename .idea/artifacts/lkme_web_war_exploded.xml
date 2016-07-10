@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="lkme-web:war exploded">
-    <output-path>$PROJECT_DIR$/lkme-web/target/lkme-web</output-path>
+    <output-path>$PROJECT_DIR$/pkuabe-web/target/lkme-web</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -9,7 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
           <element id="library" level="project" name="Maven: org.glassfish.web:jstl-impl:1.2" />
-          <element id="archive" name="linkedme-commons-0.0.1.jar">
+          <element id="archive" name="pkuabe-commons-0.0.1.jar">
             <element id="module-output" name="pkuabe-commons" />
           </element>
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.12" />
@@ -56,7 +56,7 @@
           <element id="library" level="project" name="Maven: com.esotericsoftware:kryo-shaded:3.0.3" />
           <element id="library" level="project" name="Maven: com.esotericsoftware:minlog:1.3.0" />
           <element id="library" level="project" name="Maven: org.objenesis:objenesis:2.1" />
-          <element id="archive" name="linkedme-api-0.0.1.jar">
+          <element id="archive" name="pkuabe-api-0.0.1.jar">
             <element id="module-output" name="pkuabe-api" />
           </element>
           <element id="library" level="project" name="Maven: com.squareup.okhttp:okhttp:2.5.0" />
