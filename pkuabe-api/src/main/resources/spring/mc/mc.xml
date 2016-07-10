@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:wfc="http://www.springframework.org/schema/wfc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/wfc
+       http://www.springframework.org/schema/wfc.xsd ">
+
+    <bean id="deepLinkMemCache" class="MemCacheTemplate">
+        <property name="master">
+            <wfc:mc serverPort="${deeplink.param.master}" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="slave">
+            <wfc:mc serverPort="${deeplink.param.slave}" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="masterL1List">
+            <wfc:mclist serverPorts="${deeplink.param.masterL1List}" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="slaveL1List">
+            <wfc:mclist serverPorts="" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="expire" value="21600"></property>	<!-- minutes -->
+    </bean>
+
+    <bean id="appInfoMemCache" class="MemCacheTemplate">
+        <property name="master">
+            <wfc:mc serverPort="${appInfo.cache.master}" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="slave">
+            <wfc:mc serverPort="${appInfo.cache.slave}" strategy="normal_mc"></wfc:mc>
+        </property>
+        <property name="masterL1List">
+            <wfc:mclist serverPorts="${appInfo.cache.masterL1List}" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="slaveL1List">
+            <wfc:mclist serverPorts="" strategy="normal_mc"></wfc:mclist>
+        </property>
+        <property name="expire" value="21600"></property>	<!-- minutes -->
+    </bean>
+</beans>

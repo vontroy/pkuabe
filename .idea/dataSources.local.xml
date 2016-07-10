@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - client_0@117.114.130.212" uuid="846adc0b-bdc9-48d5-b43b-b6d456b5050f">
+      <secret-storage>master_key</secret-storage>
+      <user-name>linkedme</user-name>
+      <schema-pattern>client_0.*</schema-pattern>
+      <default-schemas>client_0.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - count_0@117.114.130.212" uuid="df3151ff-c9c2-4d04-849d-5d59780fbc94">
+      <secret-storage>master_key</secret-storage>
+      <user-name>linkedme</user-name>
+      <schema-pattern>count_0.*</schema-pattern>
+      <default-schemas>count_0.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - fingerprint_0@117.114.130.212" uuid="e4c066d5-520c-4c2e-8322-e48e9a6ffa51">
+      <secret-storage>master_key</secret-storage>
+      <user-name>linkedme</user-name>
+      <schema-pattern>fingerprint_0.*</schema-pattern>
+      <default-schemas>fingerprint_0.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - fingerprint_1@117.114.130.212" uuid="ef618c11-88ec-44f8-a328-c36c5742e5ae">
+      <secret-storage>master_key</secret-storage>
+      <user-name>linkedme</user-name>
+      <schema-pattern>fingerprint_1.*</schema-pattern>
+      <default-schemas>fingerprint_1.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - fingerprint_3@117.114.130.212" uuid="29cd17fb-c0d2-42c3-a33e-e1f30c2472db">
+      <secret-storage>master_key</secret-storage>
+      <user-name>linkedme</user-name>
+      <schema-pattern>fingerprint_3.*</schema-pattern>
+      <default-schemas>fingerprint_3.*</default-schemas>
+    </data-source>
+  </component>
+</project>

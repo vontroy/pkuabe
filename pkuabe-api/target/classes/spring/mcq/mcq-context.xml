@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:wfc="http://www.springframework.org/schema/wfc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/wfc
+       http://www.springframework.org/schema/wfc.xsd ">
+
+    <bean id="apiMcqWriter" class="McqBaseWriter">
+        <property name="writeKey" value="linkedme" />
+        <property name="distinctBySize" value="true" />
+        <property name="mcqWriters" ref="mcq_writers" />
+        <property name="mcq512BWriters" ref="mcq_512B_writers" />
+    </bean>
+
+    <wfc:mclist id="mcq_writers" serverPorts="${linkedme.msg.mcq.write}" strategy="mcq" lazy-init="true" targetListClass="java.util.LinkedList"></wfc:mclist><!-- 大于512B的消息 ${mcq.3002.write} -->
+    <wfc:mclist id="mcq_512B_writers" serverPorts="${linkedme.msg.mcq.write}" strategy="mcq" lazy-init="true" targetListClass="java.util.LinkedList"></wfc:mclist>
+
+</beans>

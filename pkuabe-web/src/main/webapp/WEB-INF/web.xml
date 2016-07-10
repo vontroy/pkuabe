@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>lkme-web API</display-name>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:applicationContext.xml;
+        </param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!--
+    <filter>
+        <filter-name>authFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+
+    <!--跨域访问配置 Start-->
+    <filter>
+        <filter-name>CorsFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+        <init-param>
+            <param-name>cors.allowed.origins</param-name>
+            <param-value>*</param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.allowed.methods</param-name>
+            <param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.allowed.headers</param-name>
+            <param-value>
+                Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+            </param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.exposed.headers</param-name>
+            <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.support.credentials</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>cors.preflight.maxage</param-name>
+            <param-value>10</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CorsFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!--跨域访问配置 End-->
+
+    <servlet>
+        <servlet-name>init</servlet-name>
+        <servlet-class>pku.abe.commons.spring.McqProcessorInitListener</servlet-class>
+        <load-on-startup>3</load-on-startup> <!--tomcat启动后执行-->
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>lkmeServlet</servlet-name>
+        <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+        <!--<servlet-class>CommonServlet</servlet-class>-->
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>pku.abe.api.lkme.*,pku.abe.commons.exception</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>lkmeServlet</servlet-name>
+        <url-pattern>/i/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>lkmeServlet</servlet-name>
+        <url-pattern>/t/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/js/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/img/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/baidu_verify_t7b4nhNged.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/favicon.ico</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>urlServlet</servlet-name>
+        <servlet-class>pku.abe.servlet.UrlServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>urlServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/500.jsp</location>
+    </error-page>
+</web-app>

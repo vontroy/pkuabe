@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pkuabe-web:war">
+    <output-path>$PROJECT_DIR$/pkuabe-web/target</output-path>
+    <root id="archive" name="lkme-web.war">
+      <element id="artifact" artifact-name="pkuabe-web:war exploded" />
+    </root>
+  </artifact>
+</component>

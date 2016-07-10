@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- ******************** deeplink start ************************************ -->
+    <bean id="deepLinkShardingSupport" class="ShardingSupportHash">
+        <property name="clients" ref="deepLinkJedisClientMap"/>
+        <property name="hashAlg" value="crc32"/>
+        <property name="hashGene" value="256"/>
+        <property name="tablePerDb" value="256"/>
+    </bean>
+
+    <bean id="deepLinkJedisClientMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="0" value-ref="deepLinkJedisClient_0"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="deepLinkJedisClient_0" class="JedisMSServer"
+          init-method="init">
+        <property name="masterConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${deeplink.id.master_0}"></property>
+            </bean>
+        </property>
+        <property name="slaveConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${deeplink.id.slave_0}"></property>
+            </bean>
+        </property>
+    </bean>
+    <!-- ******************** deeplink end ************************************ -->
+
+    <!-- ************** count dao start ******************* -->
+    <bean id="deepLinkCountDao" class="CountDaoImpl">
+        <property name="shardingSupport" ref="deepLinkCountShardingSupport"/>
+    </bean>
+
+    <bean id="deepLinkCountShardingSupport" class="ShardingSupportHash">
+        <property name="clients" ref="countClientsMap"/>
+        <property name="hashAlg" value="crc32"/>
+        <property name="hashGene" value="256"/>
+        <property name="tablePerDb" value="256"/>
+    </bean>
+
+    <bean id="countClientsMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="0" value-ref="countJedisClient_0"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="countJedisClient_0" class="JedisMSServer"
+          init-method="init">
+        <property name="masterConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${deeplink.count.master_0}"></property>
+            </bean>
+        </property>
+        <property name="slaveConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${deeplink.count.slave_0}"></property>
+            </bean>
+        </property>
+    </bean>
+
+    <!-- ************** count dao end **********************-->
+
+    <!-- ******************** client start ************************************ -->
+    <bean id="clientShardingSupport" class="ShardingSupportHash">
+        <property name="clients" ref="deviceJedisClientMap"/>
+        <property name="hashAlg" value="crc32"/>
+        <property name="hashGene" value="256"/>
+        <property name="tablePerDb" value="256"/>
+    </bean>
+
+    <bean id="deviceJedisClientMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="0" value-ref="deviceJedisClient_0"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="deviceJedisClient_0" class="JedisMSServer"
+          init-method="init">
+        <property name="masterConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${device.identityid.master_0}"></property>
+            </bean>
+        </property>
+        <property name="slaveConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${device.identityid.slave_0}"></property>
+            </bean>
+        </property>
+    </bean>
+    <!-- ******************** client end ************************************ -->
+
+    <!-- ******************** btn count start ************************************ -->
+    <bean id="btnCountShardingSupport" class="ShardingSupportHash">
+        <property name="clients" ref="btnCountJedisClientMap"/>
+        <property name="hashAlg" value="crc32"/>
+        <property name="hashGene" value="256"/>
+        <property name="tablePerDb" value="256"/>
+    </bean>
+
+    <bean id="btnCountJedisClientMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="0" value-ref="btnCountJedisClient_0"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="btnCountJedisClient_0" class="JedisMSServer"
+          init-method="init">
+        <property name="masterConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${btn.count.master_0}"></property>
+            </bean>
+        </property>
+        <property name="slaveConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${btn.count.slave_0}"></property>
+            </bean>
+        </property>
+    </bean>
+    
+    <!-- ******************** btn count end ************************************ -->
+
+    <!-- ******************** linkedmeKey appid secret start ************************************ -->
+    <bean id="linkedmeKeyShardingSupport" class="ShardingSupportHash">
+        <property name="clients" ref="linkedmeKeyJedisClientMap"/>
+        <property name="hashAlg" value="crc32"/>
+        <property name="hashGene" value="256"/>
+        <property name="tablePerDb" value="256"/>
+    </bean>
+
+    <bean id="linkedmeKeyJedisClientMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="0" value-ref="linkedmeKeyJedisClient_0"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="linkedmeKeyJedisClient_0" class="JedisMSServer"
+          init-method="init">
+        <property name="masterConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${linkedmekey.master_0}"></property>
+            </bean>
+        </property>
+        <property name="slaveConfig">
+            <bean parent="jedisPoolConfig">
+                <property name="serverPortDb" value="${linkedmekey.slave_0}"></property>
+            </bean>
+        </property>
+    </bean>
+    <!-- ******************** linkedmeKey appid secret end ************************************ -->
+
+</beans>

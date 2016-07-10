@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:wfc="http://www.springframework.org/schema/wfc"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/wfc
+       http://www.springframework.org/schema/wfc.xsd ">
+
+    <bean id="dataSource" abstract="true">
+        <property name="driverClass">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="minPoolSize">
+            <value>${minPoolSize}</value>
+        </property>
+        <property name="maxPoolSize">
+            <value>${maxPoolSize}</value>
+        </property>
+        <property name="idleConnectionTestPeriod">
+            <value>25</value>
+        </property>
+        <property name="maxIdleTime">
+            <value>${maxIdleTime}</value>
+        </property>
+        <property name="breakAfterAcquireFailure">
+            <value>false</value>
+        </property>
+        <property name="acquireRetryAttempts">
+            <value>10</value>
+        </property>
+        <property name="acquireRetryDelay">
+            <value>1000</value>
+        </property>
+        <property name="maxConnectionAge">
+            <value>7200</value>
+        </property>
+        <property name="user">
+            <value>${user}</value>
+        </property>
+        <property name="password">
+            <value>${pwd}</value>
+        </property>
+    </bean>
+
+    <wfc:mysql id="datasources_deeplink_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${deeplink.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_deeplink_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${deeplink.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="deeplink_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_deeplink_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_deeplink_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############################### -->
+
+    <wfc:mysql id="datasources_app_0_m" parent="dataSource"
+               strategy="master">
+        <property name="user" value="${app.datasource.user}"/>
+        <property name="password" value="${app.datasource.pwd}"/>
+        <property name="jdbcUrl" value="${app.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_app_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="user" value="${app.datasource.user}"/>
+        <property name="password" value="${app.datasource.pwd}"/>
+        <property name="jdbcUrl" value="${app.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="app_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_app_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_app_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <wfc:mysql id="datasources_user_0_m" parent="dataSource"
+               strategy="master">
+        <property name="user" value="${user.datasource.user}"/>
+        <property name="password" value="${user.datasource.pwd}"/>
+        <property name="jdbcUrl" value="${user.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_user_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="user" value="${user.datasource.user}"/>
+        <property name="password" value="${user.datasource.pwd}"/>
+        <property name="jdbcUrl" value="${user.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="user_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_user_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_user_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <wfc:mysql id="datasources_btn_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${btn.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_btn_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${btn.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="btn_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_btn_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_btn_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="consumerJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="datasources_consumer_0_s"/>
+    </bean>
+
+    <wfc:mysql id="datasources_consumer_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${consumer.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_consumer_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${consumer.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="consumer_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_consumer_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_consumer_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############################### -->
+
+    <wfc:mysql id="datasources_client_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${client.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_client_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${client.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="client_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_client_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_client_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############## button count mysql ################# -->
+
+    <wfc:mysql id="datasources_btncount_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${btncount.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_btncount_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${btncount.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="btncount_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_btncount_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_btncount_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############## deeplink date count mysql ################# -->
+    <wfc:mysql id="datasources_deeplink_datecount_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${deeplink.datecount.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="datasources_deeplink_datecount_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${deeplink.datecount.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="deeplink_datecount_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="datasources_deeplink_datecount_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="datasources_deeplink_datecount_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############# url tags mysql ##############-->
+    <wfc:mysql id="url_tags_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${url_tags.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="url_tags_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${url_tags.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="url_tags_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="url_tags_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="url_tags_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ############## app list mysql ###############-->
+    <wfc:mysql id="app_list_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${app_list.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="app_list_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${app_list.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="app_list_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="app_list_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="app_list_0_s"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ########### fingerPrint mysql ###########-->
+    <wfc:mysql id="finger_print_0_m" parent="dataSource"
+               strategy="master">
+        <property name="jdbcUrl" value="${finger_print.datasource.master_0.jdbcUrl}"/>
+    </wfc:mysql>
+    <wfc:mysql id="finger_print_0_s" parent="dataSource"
+               strategy="slave">
+        <property name="jdbcUrl" value="${finger_print.datasource.slave_0.jdbcUrl}"/>
+    </wfc:mysql>
+
+    <bean id="finger_print_jdbctemplate_0" class="JdbcTemplate">
+        <property name="dataSource">
+            <ref bean="finger_print_0_m"/>
+        </property>
+        <property name="dataSourceSlaves">
+            <list>
+                <ref bean="finger_print_0_s"/>
+            </list>
+        </property>
+    </bean>
+</beans>
