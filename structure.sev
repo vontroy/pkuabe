@@ -1,0 +1,35 @@
+
+
+/-------------------------------------------------------------------------------------------\
+|		Client			|				Service				|			  Server			|
+|-----------------------|-----------------------------------|-------------------------------|
+|    * Android			|		 Jersey - Tomcat			|    - MYSQL			        |
+|						|									|		Store User Info			|
+|						|									|								|
+|	 - Encrypt			|	- User Interface				|	 - MemcacheD			    |
+|						|		- register					|	    High Performance		|
+|						|									|								|
+|	 - Decrypt			|		- login						|	 - MemcacheQ				|
+|						|		- logout					|		Message Queue			|
+|						|									|								|
+|	 - Upload			|		- password management		|	 - Redis					|
+|						|			- forget & set			|		Store <Key, Value>		|
+|						|			- update				|		Count					|
+|	 - Download			|		- update user info			|								|
+|						|	- SystemSetup					|								|
+|						|									|								|
+|						|	- Key Generation				|								|
+|						|									|								|
+|						|	- Offline Encrypt/Decrypt		|								|
+|						|									|								|
+\-------------------------------------------------------------------------------------------/
+
+
+
+/-------------------------------------------------------------------\
+|     Interface	    |       API       |          Commons			|
+|-------------------------------------------------------------------|
+|					|			   	  |	      JDBC Template 		|
+|	   		        | Service --> Dao |      Memcache Clients	    |
+|					|				  |		   Jedis Client			|
+\-------------------------------------------------------------------/

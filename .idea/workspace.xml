@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86867505-5395-45bb-9908-26a3596c74ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/ABE.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-commons/target/classes/a.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-web/target/classes/pku/abe/api/lkme/web/sdk/LMSdkResources.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-web/target/classes/pku/abe/api/lkme/web/sdk/main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-web/target/classes/pku/abe/api/lkme/web/sdk/rw13.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pkuabe-commons/src/main/resources/a.properties" afterPath="$PROJECT_DIR$/pkuabe-web/src/main/resources/a.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/LMSdkResources.java" afterPath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/LMSdkResources.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/rw13.java" afterPath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/UserService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/AppDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/impl/AppDaoImpl.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-commons/target/classes/pku/abe/commons/util/PairingManager.class" afterPath="$PROJECT_DIR$/pkuabe-commons/target/classes/pku/abe/commons/util/PairingManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-web/target/classes/pku/abe/web/rw13.class" afterPath="$PROJECT_DIR$/pkuabe-web/target/classes/pku/abe/web/rw13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/java-platform.iml" afterPath="$PROJECT_DIR$/.idea/java-platform.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/PairingManager.java" afterPath="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/PairingManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-api/pkuabe-api.iml" afterPath="$PROJECT_DIR$/pkuabe-api/pkuabe-api.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java" afterPath="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-commons/pkuabe-commons.iml" afterPath="$PROJECT_DIR$/pkuabe-commons/pkuabe-commons.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/MD5Utils.java" afterPath="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/MD5Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-web/pkuabe-web.iml" afterPath="$PROJECT_DIR$/pkuabe-web/pkuabe-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java" afterPath="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java" />
     </list>
     <ignored path="java-platform.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +52,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rw13.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="252">
+              <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserParams.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/params/UserParams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1407">
+              <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,28 +101,18 @@
       <file leaf-file-name="LMSdkResources.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/LMSdkResources.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="367">
               <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GaussianElimination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/GaussianElimination.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PairingManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/PairingManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,12 +120,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/resources/a.properties">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="987">
+              <caret line="53" column="36" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UUIDUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/uuid/UUIDUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MD5Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/MD5Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,15 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/auth/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/auth/SignAuthService.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/common/LMAppCount.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/common/LMShortUrlCount.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/sdkapi/impl/AppListDaoImpl.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/sdkapi/impl/ClientDaoImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/pkuabe-api/pom.xml" />
-        <option value="$PROJECT_DIR$/pkuabe-web/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/webapp/500.jsp" />
         <option value="$PROJECT_DIR$/pkuabe-api/src/main/resources/live/jdbc.properties" />
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/resources/spring/resource-context.xml" />
@@ -161,7 +216,6 @@
         <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/mcq/processor/MsgMcqProcessor.java" />
         <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/AttributeInfo.java" />
         <option value="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/GaussianElimination.java" />
-        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/mcq/McqProcessorStarter.java" />
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/main.java" />
         <option value="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/ShortUrlUtils.java" />
@@ -174,8 +228,18 @@
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/ABE.java" />
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/api/lkme/web/sdk/rw13.java" />
         <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/main.java" />
-        <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java" />
         <option value="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/PairingManager.java" />
+        <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/params/UserParams.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/uuid/UUIDUtils.java" />
+        <option value="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/MD5Utils.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/UserService.java" />
+        <option value="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/User.java" />
       </list>
     </option>
   </component>
@@ -255,307 +319,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
+              <option name="myItemId" value="pkuabe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
+              <option name="myItemId" value="pkuabe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
+              <option name="myItemId" value="pkuabe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
+              <option name="myItemId" value="pkuabe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
+              <option name="myItemId" value="pkuabe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-platform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pkuabe-commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="Type&#9;PSI&#9;JAVA://pku.abe.data.model.BinaryTreeInfo.NodeType&#10;PairingManager&#9;PSI&#9;JAVA://pku.abe.api.lkme.web.sdk.rw13#pairingManager&#10;FingerprintDao&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/dao/sdkapi/impl/FingerPrintDaoImpl.java&#10;Fing&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/data/model/FingerPrintInfo.java&#10;tablecon&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-commons/src/main/java/cc/linkedme/data/dao/strategy/TableContainer.java&#10;TableCha&#9;PSI&#9;JAVA://cc.linkedme.data.dao.strategy.TableChannel&#10;msgp&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;Dao&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/dao/sdkapi/impl/FingerPrintDaoImpl.java&#10;FingerPrintD&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/dao/sdkapi/impl/FingerPrintDaoImpl.java&#10;MsgPro&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;f&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/FingerPrintServiceImpl.java&#10;TableC&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-commons/src/main/java/cc/linkedme/data/dao/strategy/TableContainer.java&#10;ADD_FIN&#9;PSI&#9;JAVA://cc.linkedme.mcq.McqMsgType#ADD_FINGER_PRINT&#10;LMSDKSER&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;FingerPrintSEr&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/FingerPrintServiceImpl.java&#10;msgmcqproce&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;Msgutil&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/MsgUtils.java&#10;mcqmsgt&#9;PSI&#9;JAVA://cc.linkedme.mcq.McqMsgType&#10;FingerPrintMsg&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/FingerPrintMsgPusher.java&#10;FingerPrintInfo&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/data/model/FingerPrintInfo.java&#10;Quickl&#9;PSI&#9;JAVA://cc.linkedme.commons.util.QuickLZ&#10;msgProce&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;LME&#9;PSI&#9;JAVA://cc.linkedme.exception.LMExceptionFactor&#10;appserv&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/webapi/impl/AppServiceImpl.java&#10;app&#9;PSI&#9;JAVA://cc.linkedme.api.resources.App&#10;LM&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;lmsdkser&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;LMServi&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;MsgPr&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;LMSDK&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;msgPro&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;urlserv&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/servlet/UrlServlet.java&#10;Proce&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;msgproce&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;Process&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;appInfo&#9;PSI&#9;JAVA://cc.linkedme.data.model.AppInfo&#10;apppa&#9;PSI&#9;JAVA://cc.linkedme.data.model.params.AppParams&#10;urlser&#9;PSI&#9;JAVA://cc.linkedme.servlet.UrlServlet&#10;link.java&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-web/src/main/java/cc/linkedme/api/resources/Link.java&#10;TableItem.j&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-commons/src/main/java/cc/linkedme/data/dao/strategy/TableItem.java&#10;client-conte&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/resources/spring/client/client-context.xml&#10;jdbc.pro&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/resources/dev/jdbc.properties&#10;api-re&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/resources/api-resource.xml&#10;LMSdk&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/LMSdkServiceImpl.java&#10;FingerPrintServiceI&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/impl/FingerPrintServiceImpl.java&#10;FingerPrintSer&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/service/sdkapi/FingerPrintService.java&#10;MsgMcq&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/processor/MsgMcqProcessor.java&#10;MsgUti&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/MsgUtils.java&#10;McqMsgT&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/mcq/McqMsgType.java&#10;Finger&#9;FILE&#9;file:///home/vontroy/linkedme/java-platform/linkedme-api/src/main/java/cc/linkedme/dao/sdkapi/impl/FingerPrintDaoImpl.java" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -565,18 +375,18 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="java-platform" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons" />
-      <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/pkuabe-commons/src/main/resources" />
-      <recent name="$PROJECT_DIR$/pkuabe-api/src/libs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pkuabe-web/src/main/resources" />
       <recent name="$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web" />
       <recent name="$PROJECT_DIR$/pkuabe-web/src/main/java" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pkuabe-commons" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/pkuabe-commons/src/main/resources" />
+      <recent name="$PROJECT_DIR$/pkuabe-api/src/libs" />
     </key>
   </component>
   <component name="RunManager" selected="Application.rw13 (1)">
@@ -1305,11 +1115,12 @@
       <workItem from="1468078772331" duration="3958000" />
       <workItem from="1468117739444" duration="18722000" />
       <workItem from="1468144008850" duration="8026000" />
+      <workItem from="1468199425642" duration="2728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135972000" />
+    <option name="totallyTimeSpent" value="138700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1011" extended-state="6" />
@@ -1384,83 +1195,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/dev/jdk1.8.0_92/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/PolicyParser/ParserVal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4368">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/resources/spring/deeplink/deeplink-context.xml" />
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/resources/spring/deeplink/deeplink-datecount-context.xml" />
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/resources/spring/js/js.xml" />
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/resources/api-resource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/resources/commons-resource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/PolicyParser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6061">
-          <caret line="330" column="5" selection-start-line="330" selection-start-column="5" selection-end-line="330" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/AttributeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#515#532#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/servlet/UrlTestServlet.java" />
     <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/mcq/reader/StartReadingAble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1478,15 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1463">
           <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1570,32 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#437#438#0" expanded="false" />
-            <element signature="e#483#484#0" expanded="false" />
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#683#684#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#890#891#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
-            <element signature="e#1133#1134#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1225#1226#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-            <element signature="e#1323#1324#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1621,87 +1323,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/UUIDUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/TimeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/UserAgentUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/RandomUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/FingerPrintUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/SerializationUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/LogUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/ShortUrlUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/UUIDUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/TimeUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/UserAgentUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/RandomUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/FingerPrintUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/SerializationUtil.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/LogUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/MD5Utils.java" />
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/utils/ShortUrlUtils.java" />
     <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/uuid/UuidCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="28" column="29" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1725,7 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1733,7 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="244" column="28" selection-start-line="244" selection-start-column="20" selection-end-line="244" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1749,7 +1384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1757,7 +1391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1765,23 +1398,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/main.java" />
     <entry file="jar://$USER_HOME$/dev/jdk1.8.0_92/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="2215" column="24" selection-start-line="2215" selection-start-column="24" selection-end-line="2215" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1795,26 +1419,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/GaussianElimination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="189">
           <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/PairingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="210">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/LMSdkResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1823,14 +1439,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/rw13.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        <state relative-caret-position="176">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/AppDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/impl/AppDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/data/model/params/UserParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/webapi/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/LMSdkResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/util/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-commons/src/main/java/pku/abe/commons/uuid/UUIDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-api/src/main/java/pku/abe/service/webapi/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkuabe-web/src/main/java/pku/abe/web/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1897,6 +1634,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1904,7 +1642,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jpbc-api-2.0.0</last-edited>
+          <last-edited>jpbc-plaf-2.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
